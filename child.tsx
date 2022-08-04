@@ -28,7 +28,7 @@ export default function Child(myProp: props) {
 
   return (
     <div>
-      I'm the child! <input onChange={showMsg} value={valueChild}></input>
+      I'm the child! <input value={valueChild}></input>
     </div>
   );
 }
