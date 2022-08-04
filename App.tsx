@@ -9,11 +9,15 @@ export default function App() {
     setValue(1);
   };
 
+  const resetSaveValue = () => {
+    setValue(0);
+  };
+
   return (
     <div>
       I'm the parent
-      <button onClick={onSave} > SAVE </button>
-      <Child isSavePressed={value}></Child>
+      <button onClick={onSave}> SAVE </button>
+      <Child isSavePressed={value} callBack={resetSaveValue}></Child>
     </div>
   );
 }
