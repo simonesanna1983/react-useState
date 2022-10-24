@@ -27,7 +27,7 @@ export default function Child(myProp: props) {
   };
 
   return (
-    <div>
+    <div className="child">
       I'm the child! <input value={valueChild}></input>
     </div>
   );

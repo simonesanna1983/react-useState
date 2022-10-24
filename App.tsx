@@ -14,8 +14,9 @@ export default function App() {
   };
 
   return (
-    <div>
+    <div className="parentWrapper">
       I'm the parent
+      <br/>
       <button onClick={onSave}> SAVE </button>
       <Child isSavePressed={value} callBack={resetSaveValue}></Child>
     </div>
